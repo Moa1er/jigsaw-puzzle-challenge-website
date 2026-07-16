@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Delete a Jigsaw Puzzle Games account and associated cloud data.">
+    <title>Delete Account - Jigsaw Puzzle Games</title>
+    <link rel="stylesheet" href="../assets/styles.css">
+    <script src="../assets/site.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav" aria-label="Main navigation">
+        <a class="brand" href="../"><span class="brand-mark" aria-hidden="true">◆</span>Jigsaw Puzzle Games</a>
+        <div class="nav-links">
+          <a href="../privacy/">Privacy</a>
+          <a href="../terms/">Terms</a>
+          <a aria-current="page" href="./">Delete account</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="legal-page">
+      <p class="eyebrow">Account controls</p>
+      <h1>Delete your account</h1>
+      <p class="lead">Delete directly in Jigsaw Puzzle Games, or create an email request if you no longer have access to the app.</p>
+
+      <section class="legal-card">
+        <h2>Fastest: delete inside the app</h2>
+        <ol class="steps">
+          <li>Open Jigsaw Puzzle Games and select <strong>Settings</strong>.</li>
+          <li>Select <strong>Account</strong> and sign in if necessary.</li>
+          <li>Select <strong>Delete account</strong>, review the warning, and confirm.</li>
+        </ol>
+        <p>The signed-in app account and its synchronized cloud progress are permanently deleted. The app signs you out when deletion succeeds.</p>
+
+        <div class="notice">
+          <strong>What is not deleted automatically</strong>
+          Local guest progress already stored on your device remains available. Reset it in Settings, clear the app's storage, or uninstall the app. Google Play or Apple may retain store transactions for legal, accounting, security, and purchase-restoration purposes. Deleting this app account does not delete your Google or Apple account.
+        </div>
+      </section>
+
+      <section class="form-card">
+        <h2>Request deletion without the app</h2>
+        <p>Complete the details below. Selecting the button opens your email application with a deletion request addressed to our support team. You must review and send the email to submit the request.</p>
+
+        <form id="deletion-form">
+          <label for="account-email">Email used for the app account</label>
+          <input id="account-email" name="account-email" type="email" autocomplete="email" required>
+
+          <label for="account-id">App Account ID <span class="small">(optional)</span></label>
+          <input id="account-id" name="account-id" type="text" autocomplete="off" placeholder="Shown on the Account screen">
+
+          <label for="sign-in-method">Sign-in method</label>
+          <select id="sign-in-method" name="sign-in-method" required>
+            <option value="">Choose one</option>
+            <option>Email verification code</option>
+            <option>Google</option>
+            <option>Apple</option>
+            <option>Not sure</option>
+          </select>
+
+          <label for="details">Additional details <span class="small">(optional)</span></label>
+          <textarea id="details" name="details" maxlength="1000" placeholder="Anything that can help us identify the correct account"></textarea>
+
+          <button class="button" type="submit">Create deletion request email</button>
+          <p class="form-status" data-form-status role="status" aria-live="polite"></p>
+        </form>
+
+        <p class="small">This webpage does not transmit or store the information you type. Your email application sends it only after you review and send the prepared message. You may also contact <a data-support-email></a> directly with the subject "Jigsaw Puzzle Games account deletion request".</p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <p>© <span data-current-year></span> Jigsaw Puzzle Games</p>
+        <div class="footer-links"><a href="../">Support</a><a href="../privacy/">Privacy</a><a href="../terms/">Terms</a></div>
+      </div>
+    </footer>
+  </body>
+</html>
