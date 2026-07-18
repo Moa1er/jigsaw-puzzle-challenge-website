@@ -1,5 +1,5 @@
 const SITE_CONFIG = Object.freeze({
-  supportEmail: 'twoswaglol.law@gmail.com',
+  supportEmail: 'moapublish@gmail.com',
 });
 
 const configuredEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(SITE_CONFIG.supportEmail)
